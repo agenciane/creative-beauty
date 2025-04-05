@@ -1,102 +1,117 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Menu from './components/Menu';
+import Whatsapp from './components/Whatsapp';
+import ItemWork from './components/ItemWork';
+import { Mail, Phone } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div className="text-white bg-black font-[family-name:var(--font-geist-sans)]">
+      <main className="">
+        <Menu />
+        <section>
+          <Image
+            src={'/BannerPrincipal.jpg'}
+            width={1440}
+            height={811}
+            alt="banner principal"
+            aria-hidden
+            className="w-full"
+          />
+        </section>
+        <section id="quem_somos" className="bg-[#222222]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
+            <div className="flex flex-col justify-center">
+              <h2 className="bold text-xl md:text-5xl">CREATIVE BEAUTY: Elegância e modernidade e beleza</h2>
+              <p className="py-8">
+                No Creative Beauty, a beleza vai além do convencional. Nosso salão é um refúgio de elegância e inovação,
+                onde cada detalhe é cuidadosamente pensado para proporcionar uma experiência única
+              </p>
+              <div className="max-w-[300px]">
+                <Whatsapp title="Agendar um horário" />
+              </div>
+            </div>
+            <div>
+              <Image src={'/foto-salao.jpg'} width={585} height={387} alt="foto do salao" aria-hidden />
+            </div>
+          </div>
+        </section>
+        <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
+          <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto p-8">
+            <h3 className="text-5xl bold">Procedimentos</h3>
+            <p className="py-5 text-center">
+              Descubra um Espaço de Sofisticação e Inovação, Onde a Beleza é Transformada em Arte. No Creative Beauty,
+              Cada Detalhe é Pensado para Oferecer uma Experiência Única e personalizada.
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
+              <ItemWork title="Procedimento Cabelo" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
+              <ItemWork title="Procedimento Unha" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
+              <ItemWork title="Procedimento Pé" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
+              <ItemWork title="Procedimento Mais" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
+            </div>
+          </div>
+        </section>
+        <section id="cursos">
+          <div>
+            <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto p-8">
+              <Image src={'/logoExpertEmSalao.png'} width={200} height={71} alt="logo expert em salao" />
+              <h4>
+                O passo a passo para tornar-se especialista em mechas e faturar inicialmente de 7 a 10 mil em pouco
+                tempo.
+              </h4>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
+              <div>
+                <Image src={'/computer-expert.png'} width={533} height={410} alt="expert em salao curso" aria-hidden />
+              </div>
+              <div className="flex flex-col justify-center">
+                <p className="py-8">
+                  O Método Expert em Mechas é a profissionalização ideal para você sair da estagnação profissional e
+                  conquistar o reconhecimento, a valorização e o lucro que você tanto merece.
+                </p>
+                <p className="py-8">
+                  O Expert em Mechas foi desenvolvido para você dominar as maiores e mais avançadas técnicas: Fundo de
+                  clareamento, Estrela de Oswald, Ação dos produtos nos cabelos, a diferença entre Coloração e
+                  Tonalizante, Tratamentos e muitos outros assuntos.
+                </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <Whatsapp title="Quero saber mais!" />
+                  <a href="#">
+                    <div className="border-solid border-white border-2 rounded-full py-2 px-10 flex items-center gap-2 text-white font-bold text-lg justify-center">
+                      Comprar o curso
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer id="contato" className="">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-[1200px] mx-auto p-2">
+          <div>
+            <Image src={'/logo-creative-beauty.png'} width={243} height={50} alt="logo creative beauty" />
+          </div>
+          <div>
+            <p className="py-2">ABERTO DE TER. À SAB. DAS 9h ÀS 21h</p>
+            <div className="flex flex-row gap-4 py-2">
+              <Mail width={24} height={24} />
+              <span>contato@creativebeaouty.com.br</span>
+            </div>
+            <div className="flex flex-row gap-4 py-2">
+              <Phone width={24} height={24} />
+              <span>(11) 9999-9999</span>
+            </div>
+          </div>
+          <div>
+            <h4 className="py-2 font-bold">UNIDADE CURITIBA</h4>
+            <p className="py-2">Av. Sete de Setembro, 6460 Seminário, Curitiba - PR</p>
+          </div>
+          <div>
+            <h4 className="py-2 font-bold">UNIDADE ALPHA VILLE</h4>
+            <p className="py-2">Alameda Araguaia, 751 - loja 4 Alphaville, Barueri - SP</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
