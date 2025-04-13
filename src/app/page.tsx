@@ -2,7 +2,13 @@ import Image from 'next/image';
 import Menu from './components/Menu';
 import Whatsapp from './components/Whatsapp';
 import ItemWork from './components/ItemWork';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, Instagram } from 'lucide-react';
+
+import localFont from 'next/font/local';
+
+const okomito = localFont({
+  src: '../../public/Okomito-Medium.ttf',
+});
 
 export default function Home() {
   return (
@@ -22,7 +28,9 @@ export default function Home() {
         <section id="quem_somos" className="bg-[#222222]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
             <div className="flex flex-col justify-center">
-              <h2 className="bold text-xl md:text-5xl">CREATIVE BEAUTY: Elegância e modernidade e beleza</h2>
+              <h2 className={`bold text-xl md:text-5xl ${okomito.className}`}>
+                CREATIVE BEAUTY: Elegância e modernidade e beleza
+              </h2>
               <p className="py-8">
                 No Creative Beauty, a beleza vai além do convencional. Nosso salão é um refúgio de elegância e inovação,
                 onde cada detalhe é cuidadosamente pensado para proporcionar uma experiência única
@@ -37,17 +45,44 @@ export default function Home() {
           </div>
         </section>
         <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
-          <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto p-8">
-            <h3 className="text-5xl bold">Procedimentos</h3>
+          <div className="flex flex-col justify-center items-cen  ter max-w-[1200px] mx-auto p-8">
+            <h3 className="text-5xl bold text-center">Especialidades</h3>
             <p className="py-5 text-center">
               Descubra um Espaço de Sofisticação e Inovação, Onde a Beleza é Transformada em Arte. No Creative Beauty,
               Cada Detalhe é Pensado para Oferecer uma Experiência Única e personalizada.
             </p>
             <div className="flex flex-col md:flex-row gap-4 mt-8">
-              <ItemWork title="Procedimento Cabelo" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
-              <ItemWork title="Procedimento Unha" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
-              <ItemWork title="Procedimento Pé" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
-              <ItemWork title="Procedimento Mais" description="Saber mais" link="#" imageUrl="/servico-exemplo.jpg" />
+              <ItemWork
+                title="A tendência do ano!"
+                description="Saber mais"
+                link="https://www.instagram.com/p/DIWjpTIuSIp/"
+                imageUrl="/image01.jpg"
+              />
+              <ItemWork
+                title="Coopper blonde"
+                description="Saber mais"
+                link="https://www.instagram.com/p/DH_7BskSQ8x/"
+                imageUrl="/image02.jpg"
+              />
+              <ItemWork
+                title="Efeito Marmorizado"
+                description="Saber mais"
+                link="https://www.instagram.com/p/DFlnzoKMF-6/"
+                imageUrl="/imagem03.jpg"
+              />
+              <ItemWork
+                title="Visagismo 360"
+                description="Saber mais"
+                link="https://www.instagram.com/p/DFln3uEujVb/"
+                imageUrl="/image04.jpg"
+              />
+            </div>
+            <div className="flex justify-center items-center mt-8">
+              <a href="https://www.instagram.com/creativebeautysp/" target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-row gap-4 border-solid border-white rounded-full border-2 py-2 px-10">
+                  <Instagram color="#fff" /> Veja mais no instagram
+                </div>
+              </a>
             </div>
           </div>
         </section>

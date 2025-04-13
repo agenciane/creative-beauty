@@ -15,7 +15,7 @@ const ItemWork: React.FC<ItemWorkProps> = ({ title, description, imageUrl = '/se
 
       <div className="relative z-10 p-6   min-h-[350px] md:h-full min-w-[150px] md:min-w-[248px]   flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent">
         <h4 className="text-white font-bold text-xl mb-2">{title}</h4>
-        <a href={link} className="block mt-2">
+        <a href={link} className="block mt-2" target="_blank" rel="noopener noreferrer">
           <div className="text-white/80 hover:text-white transition-colors">
             <span>{description}</span>
             <svg className="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
