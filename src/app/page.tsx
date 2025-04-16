@@ -17,7 +17,7 @@ export default function Home() {
         <Menu />
         <section>
           <Image
-            src={'/BannerPrincipal.jpg'}
+            src={'/banner-main.jpg'}
             width={1440}
             height={811}
             alt="banner principal"
