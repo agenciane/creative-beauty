@@ -3,6 +3,7 @@ import Menu from './components/Menu';
 import Whatsapp from './components/Whatsapp';
 import ItemWork from './components/ItemWork';
 import { Mail, Phone, Instagram } from 'lucide-react';
+import Carrousel from './components/Carrousel';
 
 import localFont from 'next/font/local';
 
@@ -16,14 +17,15 @@ export default function Home() {
       <main className="">
         <Menu />
         <section>
-          <Image
+          <Carrousel />
+          {/* <Image
             src={'/banner-main.jpg'}
             width={1440}
             height={811}
             alt="banner principal"
             aria-hidden
             className="w-full"
-          />
+          /> */}
         </section>
         <section id="quem_somos" className="bg-[#222222]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
