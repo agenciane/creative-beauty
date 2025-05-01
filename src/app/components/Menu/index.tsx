@@ -4,11 +4,15 @@ import Image from 'next/image';
 
 const Menu: React.FC = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="flex justify-between items-center p-4 max-w-[1200px] w-full">
-        <div>
-          <Image src={'/logo-creative-beauty.png'} width={360} height={74} alt="logo creative beauty" />
-        </div>
+    <div className="flex justify-center items-center md:fixed top-0 z-10 w-full bg-black/80 backdrop-blur-sm">
+      <div className="flex justify-center md:justify-between items-center p-4 max-w-[1200px] w-full">
+        <Image
+          src={'/logo-creative-beauty.png'}
+          width={360}
+          height={74}
+          alt="logo creative beauty"
+          className="max-w-[150px] md:max-w-52"
+        />
         <nav>
           <ul className="flex flex-row gap-8 hidden md:flex">
             <li>
