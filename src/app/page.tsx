@@ -80,6 +80,29 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="bg-[url('/apresentacao-robson.jpg')] bg-cover bg-top-right md:bg-center md:py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8 bg-black/70 md:bg-black/0">
+            <div>
+              <h3 className="uppercase">Robson Souza</h3>
+              <h4 className="uppercase">Beleza como Arte, Educação como Missão</h4>
+              <p>
+                Com 23 anos de carreira, é um dos nomes mais influentes da beleza no Brasil e no mundo. Sua trajetória é
+                marcada por inovação, excelência técnica e um propósito claro: transformar vidas através da beleza. Já
+                impactou mais de 30 mil alunos em 13 países, revolucionando a forma como o cabelo é entendido como forma
+                de expressão, autoestima e identidade.
+              </p>
+              <p>
+                Criador das técnicas Mudança de Fundo (2015) e Hair Contour (2008), Robson redefiniu padrões na
+                colorimetria, trazendo harmonia entre tons e traços faciais. Seu trabalho estampa capas icônicas como
+                Vogue Itália, Veja e Caras, além de marcar presença em novelas e minisséries da principal emissora de
+                televisão do Brasil. Seu talento foi consagrado em premiações como Hair Brasil, BSG World e Behind The
+                Chair. Também protagonizou transformações emocionantes no programa da Xuxa, tocando milhões de pessoas
+                com seu olhar sensível e técnico.
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </section>
         <section id="cursos">
           <div>
             <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto p-8">
