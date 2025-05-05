@@ -39,48 +39,36 @@ export default function Home() {
           </div>
         </section>
         <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
-          <div className="flex flex-col justify-center items-cen  ter max-w-[1200px] mx-auto p-8">
+          <div className="flex flex-col justify-center items-center w-full mx-auto p-8">
             <h3 className="text-5xl bold text-center uppercase">Especialidades</h3>
             <p className="py-5 text-center">
               Descubra um Espaço de Sofisticação e Inovação, Onde a Beleza é Transformada em Arte. No Creative Beauty,
               Cada Detalhe é Pensado para Oferecer uma Experiência Única e personalizada.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-              <ItemWork
-                title="Visagismo 360"
-                description="Saber mais"
-                link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image01.jpg"
-              />
-              <ItemWork
-                title="Mechas"
-                description="Cortes"
-                link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image02.jpg"
-              />
-              <ItemWork
-                title="Cortes"
-                description="Saber mais"
-                link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image04.jpg"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
               <ItemWork
                 title="Alteração de fundo"
                 description="Saber mais"
                 link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image01.jpg"
+                imageUrl="/alteracao-de-fundo.JPG"
               />
               <ItemWork
-                title="Tratamentos"
-                description="Saber mais"
+                title="Mechas"
+                description="saber mais"
                 link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image02.jpg"
+                imageUrl="/mechas.jpg"
               />
               <ItemWork
-                title="Outros serviços"
+                title="outros-servicos.jpg"
                 description="Saber mais"
                 link="https://www.instagram.com/p/DIWjpTIuSIp/"
-                imageUrl="/image04.jpg"
+                imageUrl="/outros-servicos.jpg"
+              />
+              <ItemWork
+                title="Visagismo 360"
+                description="Saber mais"
+                link="https://www.instagram.com/p/DIWjpTIuSIp/"
+                imageUrl="/visagismo-360.jpg"
               />
             </div>
             <div className="flex justify-center items-center mt-8">
