@@ -6,6 +6,7 @@ import { Mail, Phone, Instagram } from 'lucide-react';
 import Carrousel from './components/Carrousel';
 
 import localFont from 'next/font/local';
+import CarrouselMobile from './components/CarrouselMobile';
 
 const okomito = localFont({
   src: '../../public/Okomito-Medium.ttf',
@@ -16,8 +17,11 @@ export default function Home() {
     <div className="text-white bg-black font-[family-name:var(--font-geist-sans)]">
       <main className="">
         <Menu />
-        <section>
+        <section className="hidden md:block">
           <Carrousel />
+        </section>
+        <section className="md:hidden">
+          <CarrouselMobile />
         </section>
         <section id="quem_somos" className="bg-[#222222]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
