@@ -38,7 +38,7 @@ const CarrouselMobile: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src={'/mobile/banner04.jpeg'}
+          src={'/mobile/banner04.jpg'}
           width={1440}
           height={811}
           alt="banner principal"
