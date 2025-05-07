@@ -5,12 +5,7 @@ import ItemWork from './components/ItemWork';
 import { Mail, Phone, Instagram } from 'lucide-react';
 import Carrousel from './components/Carrousel';
 
-import localFont from 'next/font/local';
 import CarrouselMobile from './components/CarrouselMobile';
-
-const okomito = localFont({
-  src: '../../public/Okomito-Medium.ttf',
-});
 
 export default function Home() {
   return (
@@ -23,7 +18,17 @@ export default function Home() {
         <section className="md:hidden">
           <CarrouselMobile />
         </section>
-        <section id="quem_somos" className="bg-[#222222]">
+        <section id="quem_somos">
+          <Image
+            src={'/quem-somos-image.webp'}
+            width={1600}
+            height={900}
+            alt="quem somos"
+            aria-hidden
+            className="w-full"
+          />
+        </section>
+        {/* <section id="quem_somos" className="bg-[#222222]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
             <div className="flex flex-col justify-center">
               <h2 className={`bold text-xl md:text-5xl ${okomito.className} uppercase`}>
@@ -41,7 +46,7 @@ export default function Home() {
               <Image src={'/foto-salao.jpg'} width={585} height={387} alt="foto do salao" aria-hidden />
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
           <div className="flex flex-col justify-center items-center w-full mx-auto p-8">
             <h3 className="text-5xl bold text-center uppercase">Especialidades</h3>
