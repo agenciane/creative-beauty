@@ -63,7 +63,7 @@ export default function Home() {
                 imageUrl="/mechas.jpg"
               />
               <ItemWork
-                title="outros-servicos.jpg"
+                title="Outros Serviços.jpg"
                 description="Saber mais"
                 link="https://www.instagram.com/p/DIWjpTIuSIp/"
                 imageUrl="/outros-servicos.jpg"
@@ -87,7 +87,7 @@ export default function Home() {
         <section className="bg-[url('/apresentacao-robson.jpg')] bg-cover bg-top-right md:bg-center md:py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8 bg-black/70 md:bg-black/0">
             <div>
-              <h3 className="uppercase">Robson Souza</h3>
+              <h3 className="uppercase text-6xl font-extrabold">Robson Souza</h3>
               <h4 className="uppercase">Beleza como Arte, Educação como Missão</h4>
               <p>
                 Com 23 anos de carreira, é um dos nomes mais influentes da beleza no Brasil e no mundo. Sua trajetória é
