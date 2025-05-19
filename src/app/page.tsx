@@ -118,7 +118,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col md:flex-row gap-4">
                   <Whatsapp title="Quero saber mais!" />
-                  <a href="#">
+                  <a href="https://wa.me/5511972379176" target="_blank" rel="noopener noreferrer">
                     <div className="border-solid border-white border-2 rounded-full py-2 px-10 flex items-center gap-2 text-white font-bold text-lg justify-center">
                       Comprar o curso
                     </div>
