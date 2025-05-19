@@ -8,9 +8,9 @@ const Carrousel: React.FC = () => {
     <Carousel>
       <Carousel.Item>
         <Image
-          src={'/desktop/banner01.jpg'}
-          width={1440}
-          height={811}
+          src={'/desktop/banner01.webp'}
+          width={2000}
+          height={1126}
           alt="banner principal"
           aria-hidden
           className="w-full"
@@ -18,9 +18,9 @@ const Carrousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src={'/desktop/banner02.jpg'}
-          width={1440}
-          height={811}
+          src={'/desktop/banner02.webp'}
+          width={2000}
+          height={1126}
           alt="banner principal"
           aria-hidden
           className="w-full"
@@ -28,9 +28,9 @@ const Carrousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src={'/desktop/banner03.jpg'}
-          width={1440}
-          height={811}
+          src={'/desktop/banner03.webp'}
+          width={2000}
+          height={1126}
           alt="banner principal"
           aria-hidden
           className="w-full"
@@ -38,9 +38,9 @@ const Carrousel: React.FC = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src={'/desktop/banner04.jpg'}
-          width={1440}
-          height={811}
+          src={'/desktop/banner04.webp'}
+          width={2000}
+          height={1126}
           alt="banner principal"
           aria-hidden
           className="w-full"
