@@ -28,28 +28,9 @@ export default function Home() {
             className="w-full"
           />
         </section>
-        {/* <section id="quem_somos" className="bg-[#222222]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8">
-            <div className="flex flex-col justify-center">
-              <h2 className={`bold text-xl md:text-5xl ${okomito.className} uppercase`}>
-                CREATIVE BEAUTY: Elegância e modernidade e beleza
-              </h2>
-              <p className="py-8">
-                No Creative Beauty, a beleza vai além do convencional. Nosso salão é um refúgio de elegância e inovação,
-                onde cada detalhe é cuidadosamente pensado para proporcionar uma experiência única
-              </p>
-              <div className="max-w-[300px]">
-                <Whatsapp title="Agendar um horário" />
-              </div>
-            </div>
-            <div>
-              <Image src={'/foto-salao.jpg'} width={585} height={387} alt="foto do salao" aria-hidden />
-            </div>
-          </div>
-        </section> */}
         <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
           <div className="flex flex-col justify-center items-center w-full mx-auto p-8">
-            <h3 className="text-5xl bold text-center uppercase">Especialidades</h3>
+            <h3 className="text-5xl! bold text-center uppercase">Especialidades</h3>
             <p className="py-5 text-center">
               Descubra um Espaço de Sofisticação e Inovação, Onde a Beleza é Transformada em Arte. No Creative Beauty,
               Cada Detalhe é Pensado para Oferecer uma Experiência Única e personalizada.
@@ -68,7 +49,7 @@ export default function Home() {
                 imageUrl="/mechas.jpg"
               />
               <ItemWork
-                title="Outros Serviços.jpg"
+                title="Outros Serviços"
                 description="Saber mais"
                 link="https://www.instagram.com/p/DIWjpTIuSIp/"
                 imageUrl="/outros-servicos.jpg"
@@ -92,7 +73,7 @@ export default function Home() {
         <section className="bg-[url('/apresentacao-robson.jpg')] bg-cover bg-top-right md:bg-center md:py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1200px] mx-auto p-8 bg-black/70 md:bg-black/0">
             <div>
-              <h3 className="uppercase text-6xl font-extrabold">Robson Souza</h3>
+              <h3 className="uppercase text-6xl! font-extrabold">Robson Souza</h3>
               <h4 className="uppercase">Beleza como Arte, Educação como Missão</h4>
               <p>
                 Com 23 anos de carreira, é um dos nomes mais influentes da beleza no Brasil e no mundo. Sua trajetória é
@@ -154,7 +135,7 @@ export default function Home() {
             <Image src={'/logo-creative-beauty.png'} width={243} height={50} alt="logo creative beauty" />
           </div>
           <div>
-            <p className="py-2">ABERTO DE TER. À SAB. DAS 9h ÀS 21h</p>
+            <p className="py-2">ABERTO DE SEG. À SAB. DAS 9h ÀS 21h</p>
             <div className="flex flex-row gap-4 py-2">
               <Mail width={24} height={24} />
               <span>contato@creativebeaouty.com.br</span>
@@ -169,7 +150,7 @@ export default function Home() {
             <p className="py-2">Av. Sete de Setembro, 6460 Seminário, Curitiba - PR</p>
           </div>
           <div>
-            <h4 className="py-2 font-bold">UNIDADE ALPHA VILLE</h4>
+            <h4 className="py-2 font-bold">UNIDADE ALPHAVILLE</h4>
             <p className="py-2">Alameda Araguaia, 751 - loja 4 Alphaville, Barueri - SP</p>
           </div>
         </div>
