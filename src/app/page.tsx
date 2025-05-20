@@ -19,14 +19,7 @@ export default function Home() {
           <CarrouselMobile />
         </section>
         <section id="quem_somos">
-          <Image
-            src={'/quem-somos-image.webp'}
-            width={1600}
-            height={900}
-            alt="quem somos"
-            aria-hidden
-            className="w-full"
-          />
+          <Image src={'/quem-somos.webp'} width={1600} height={900} alt="quem somos" aria-hidden className="w-full" />
         </section>
         <section id="procedimentos" className="bg-[url('/background-procedimentos.jpg')] bg-cover bg-center py-10">
           <div className="flex flex-col justify-center items-center w-full mx-auto p-8">
