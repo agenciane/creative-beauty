@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row gap-4 py-2">
               <Phone width={24} height={24} />
-              <span>(11) 97237-9176</span>
+              <span>(11) 4161-8439</span>
             </div>
           </div>
           <div>
